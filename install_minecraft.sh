@@ -28,7 +28,7 @@ sudo su -c "echo 'java -Xms128M -Xmx5000M -jar /mnt/${gamename}/server.jar nogui
 
 sudo chmod +x /mnt/${gamename}/start.sh
 
-#sudo su -c "(crontab -l| grep -v -F '$cronjob'; echo '$cronjob') | crontab -" -s /bin/sh $gamename
+sudo su -c "(crontab -l| grep -v -F '$cronjob'; echo '$cronjob') | crontab -" -s /bin/sh $gamename
 
 
 
